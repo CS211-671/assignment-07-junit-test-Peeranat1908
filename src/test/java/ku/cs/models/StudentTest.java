@@ -8,12 +8,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class StudentTest {
 
     @Test
-    @DisplayName("ทดสอบการเพิ่มคะแนน 40.5 คะแนน")
+    @DisplayName("ทดสอบการเพิ่มคะแนน 90.5 คะแนน")
     void testAddScore(){
         Student s1 = new Student("6610450323", "frame");
         assertEquals(0, s1.getScore());
         s1.addScore(40.5);
         assertEquals(40.5, s1.getScore());
+        s1.addScore(50.0);
+        assertEquals(90.5, s1.getScore());
     }
 
     @Test
